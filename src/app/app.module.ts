@@ -99,6 +99,8 @@ export function providers() {
   imports: [
     IonicModule.forRoot(MyApp),
     TranslateModule.forRoot({
+      mode: 'ios',
+      backButtonText: 'Zurück',
       provide: TranslateLoader,
       useFactory: (createTranslateLoader),
       deps: [Http]
